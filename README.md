@@ -1,3 +1,5 @@
+# Use `npm i` to import all necessary node modules when cloning to new machine
+
 # AngularLab
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
