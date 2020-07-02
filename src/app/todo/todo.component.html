@@ -1,6 +1,13 @@
-<h2>My Todo List</h2>
-<ul class="todolist">
-    <li *ngFor="let todo of todolist">
-        <span>{{todo.task}}</span>{{todo.completed}}
-    </li>
-</ul>
+<div class="todo-container">
+    <h1>TODO List</h1>
+    <p>A place to store your todos</p>
+    <h2>Filter your to-dos</h2>
+    <ul class="todolist">
+        <li *ngFor="let todo of todolist; index as i">
+            <span *ngIf="todo.completed; else elseTemplate">{{i+1}}. <strike>{{todo.task}}</strike></span>
+            <div class="remove">X</div>
+        </li>
+    </ul>
+    <h2 class="grey">Add your to-do</h2>
+    <button>Add</button>
+</div>

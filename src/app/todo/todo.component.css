@@ -1,0 +1,40 @@
+h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.todo-container {
+    background-color: #eee;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.todolist > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: #bbb;
+}
+
+button {
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: #ff1493;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+}
+
+.remove {
+    cursor: pointer;
+    display: inline-block;
+}

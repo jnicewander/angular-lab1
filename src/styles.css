@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 *, *::before, *::after {
@@ -11,5 +15,6 @@ html, body {
 }
 
 body {
-    background-color: red;    
+    margin: 1rem 6rem;
+    background: linear-gradient(to right, #f857a6, #ff5858);
 }
