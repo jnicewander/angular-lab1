@@ -9,7 +9,8 @@ import { TODOLIST } from '../sample-todos';
 export class TodoComponent {
   todolist = TODOLIST;
 
-  toggle() {
-    return this.todolist;
+  markComplete(el) {
+    el.completed = true;
   }
 }
+

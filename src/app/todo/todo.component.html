@@ -3,11 +3,17 @@
     <p>A place to store your todos</p>
     <h2>Filter your to-dos</h2>
     <ul class="todolist">
-        <li *ngFor="let todo of todolist; index as i">
-            <span *ngIf="todo.completed; else elseTemplate">{{i+1}}. <strike>{{todo.task}}</strike></span>
-            <div class="remove">X</div>
+        <li *ngFor="let todo of todolist; index as i; trackBy: trackIndex">
+            <div>
+                <span>
+                    {{i+1}}.
+                </span>
+                <button class="completeBtn" *ngIf="!todo.completed" (click)="markComplete(todo)">Complete</button>
+                <span [ngStyle]="todo.completed && {'text-decoration': 'line-through'} "> {{ todo.task }} </span>
+            </div>
+            <div class="remove" (click)="removeTodo(todo)">X</div>
         </li>
     </ul>
     <h2 class="grey">Add your to-do</h2>
-    <button>Add</button>
+    <button class="addBtn">Add</button>
 </div>
