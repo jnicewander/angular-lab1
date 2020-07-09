@@ -11,7 +11,7 @@
                 <button class="completeBtn" *ngIf="!todo.completed" (click)="markComplete(todo)">Complete</button>
                 <span [ngStyle]="todo.completed && {'text-decoration': 'line-through'} "> {{ todo.task }} </span>
             </div>
-            <div class="remove" (click)="removeTodo(todo)">X</div>
+            <button class="remove" (click)="removeTask(i)">X</button>
         </li>
     </ul>
     <form #addTodoInputForm="ngForm" (ngSubmit)="addTask(addTodoInputForm); addTodoInputForm.reset()">

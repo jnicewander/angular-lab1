@@ -23,11 +23,11 @@ export class TodoComponent {
         task: addTodoInputForm.value.todoInput,
         completed: false
       }
-    )
+    );
+  }
 
-
-    console.log(addTodoInputForm.value);
-    console.log(this.todoArray);
+  removeTask(index){
+    this.todoArray.splice(index, 1);
   }
 }
 
