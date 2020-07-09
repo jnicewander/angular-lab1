@@ -13,8 +13,8 @@ export class TodoComponent {
 
   todoArray: Todo[] = [];
 
-  markComplete(el) {
-    el.completed = true;
+  completeTask(todo) {
+    todo.completed = true;
   }
 
   addTask(addTodoInputForm: NgForm) {
@@ -31,3 +31,10 @@ export class TodoComponent {
   }
 }
 
+// ng generate pipe
+// value will be todo array
+// filter: string
+// const displayedObj: todoArray[] = [];
+// for(let obj of value) { if (obj.prop1.includes(filter)){
+  displayedObj.push(obj);
+}}
