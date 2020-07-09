@@ -13,7 +13,7 @@ export class TodoComponent {
 
   todoArray: Todo[] = [];
 
-  completeTask(todo) {
+  completeTask(todo: Todo) {
     todo.completed = true;
   }
 
@@ -26,7 +26,9 @@ export class TodoComponent {
     );
   }
 
-  removeTask(index){
+  removeTask(index: number){
     this.todoArray.splice(index, 1);
   }
+
+  filter: string = '';
 }
