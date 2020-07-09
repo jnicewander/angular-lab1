@@ -8,7 +8,7 @@
                 <span>
                     {{i+1}}.
                 </span>
-                <button class="completeBtn" *ngIf="!todo.completed" (click)="markComplete(todo)">Complete</button>
+                <button class="completeBtn" *ngIf="!todo.completed" (click)="completeTask(todo)">Complete</button>
                 <span [ngStyle]="todo.completed && {'text-decoration': 'line-through'} "> {{ todo.task }} </span>
             </div>
             <button class="remove" (click)="removeTask(i)">X</button>
