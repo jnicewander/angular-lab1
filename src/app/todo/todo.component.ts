@@ -30,11 +30,3 @@ export class TodoComponent {
     this.todoArray.splice(index, 1);
   }
 }
-
-// ng generate pipe
-// value will be todo array
-// filter: string
-// const displayedObj: todoArray[] = [];
-// for(let obj of value) { if (obj.prop1.includes(filter)){
-  displayedObj.push(obj);
-}}
