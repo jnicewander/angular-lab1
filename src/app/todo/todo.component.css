@@ -21,12 +21,15 @@ ul {
 }
 
 input {
-    color: #bbb;
     border: #bbb;
     border-radius: 5px;
     padding: .3rem;
     width: 100%;
     font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: #bbb;
 }
 
 .completeBtn {
@@ -46,6 +49,6 @@ input {
 }
 
 .remove {
-    cursor: pointer;
     display: inline-block;
+    border: none;
 }
